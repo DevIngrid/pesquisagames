@@ -23,6 +23,7 @@ public class Genre implements Serializable{
 	private Long id;
 	private String name;
 	
+	
 	@OneToMany(mappedBy = "genre")
 	private List<Game> games = new ArrayList<>();
 	
