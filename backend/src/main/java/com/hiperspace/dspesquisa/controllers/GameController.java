@@ -12,7 +12,7 @@ import com.hiperspace.dspesquisa.dto.GameDTO;
 import com.hiperspace.dspesquisa.services.GameService;
 
 @RestController
-@RequestMapping("/games")
+@RequestMapping(value = "/games")
 public class GameController {
 	
 	@Autowired

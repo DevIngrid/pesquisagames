@@ -20,7 +20,7 @@ import com.hiperspace.dspesquisa.dto.RecordInsertDTO;
 import com.hiperspace.dspesquisa.services.RecordService;
 
 @RestController
-@RequestMapping("/records")
+@RequestMapping(value = "/records")
 public class RecordController {
 	
 	@Autowired
@@ -33,6 +33,7 @@ public class RecordController {
 	}
 	
 	//fiz um pouco diferente do que o Nélio fez - usei pageable como ele fez em outra aula.
+	
 	@GetMapping
 	public ResponseEntity<Page<RecordDTO>> findAll(
 			@RequestParam(value = "min", defaultValue = "") String min,
