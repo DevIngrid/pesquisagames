@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ReactComponent as ArrowIcon } from "../../assets/arrow.svg";
 import { ReactComponent as GamerImage } from "../../assets/gamer.svg";
+import Records from "../Records";
 import "./styles.css";
 
 const Home = () => (
@@ -11,12 +13,14 @@ const Home = () => (
         Clique no botão abaixo e saiba quais são os jogos que os gamers estão
         escolhendo!
       </h3>
-      <div className="home-actions">
-        <button className="home-btn">QUERO SABER QUAIS SÃO</button>
-        <div className="home-btn-icon">
-          <ArrowIcon />
+      <Link to="/records">
+        <div className="home-actions">
+          <button className="home-btn">QUERO SABER QUAIS SÃO</button>
+          <div className="home-btn-icon">
+            <ArrowIcon />
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
     <div className="home-image">
       <GamerImage />
