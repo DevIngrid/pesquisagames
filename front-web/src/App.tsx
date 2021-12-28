@@ -1,8 +1,15 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/Header";
+import Home from "./pages/Home";
 
 function App() {
-  return <h1>Hello semana DevSuperior!</h1>;
+  return (
+    <div>
+      <Header />
+      <Home />
+    </div>
+  );
 }
 
 export default App;
